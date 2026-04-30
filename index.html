@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForgeAV - Antivirus léger pour Windows</title>
+    <link rel="icon" type="image/png" href="Logo.png">
+    <link rel="apple-touch-icon" href="Logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="title" content="ForgeAV">
+    <meta name="description" content="ForgeAV est un antivirus léger en ligne de commande pour Windows, spécialisé dans le scan multithread et la quarantaine de fichiers suspects.">
+    <meta name="keywords" content="antivirus, Windows, C, scan multithread, quarantaine, sécurité">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="fr-FR">
+    <meta name="revisit-after" content="5 days">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="Logo.png" alt="ForgeAV" class="logo-img">
+                <span class="logo-text">ForgeAV</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">À propos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#features" class="nav-link">Fonctionnalités</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#download" class="nav-link">Installation</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="gradient-text">ForgeAV</span>
+                </h1>
+                <p class="hero-subtitle">Antivirus pour Windows</p>
+                <p class="hero-description">
+                    ForgeAV analyse les dossiers, surveille les processus et isole les fichiers suspects avec un scan multithread rapide et efficace.
+                </p>
+                <div class="hero-buttons">
+                    <a href="https://github.com/jujucram/forge-av" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-github"></i>
+                        Voir sur GitHub
+                    </a>
+                    <a href="#about" class="btn btn-secondary">
+                        En savoir plus
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="Logo.png" alt="Logo ForgeAV" class="floating-image">
+                <div class="image-glow"></div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">À propos de ForgeAV</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-card">
+                        <h3>Scanner de fichiers</h3>
+                        <p>
+                            ForgeAV analyse des dossiers entiers à la recherche de signatures suspectes et de comportements anormaux.
+                        </p>
+                    </div>
+                    <div class="about-card">
+                        <h3>Scan des processus</h3>
+                        <p>
+                            Surveille les processus en cours pour détecter les menaces actives et protéger votre machine en temps réel.
+                        </p>
+                    </div>
+                    <div class="about-card">
+                        <h3>Multithread performant</h3>
+                        <p>
+                            Le moteur est optimisé pour exécuter des scans rapides grâce à une architecture multithread adaptée à Windows.
+                        </p>
+                    </div>
+                    <div class="about-card">
+                        <h3>Conçu pour Windows</h3>
+                        <p>
+                            Écrit en C avec un support Batch, ForgeAV est pensé pour une utilisation sur Windows, portable et facile à compiler.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section features">
+        <div class="container">
+            <h2 class="section-title">Fonctionnalités</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-folder-open"></i>
+                    </div>
+                    <h3>Scan de dossier</h3>
+                    <p>Analyse complète d’un dossier pour détecter les fichiers malveillants et les éléments à risque.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>Scan des processus</h3>
+                    <p>Inspection des processus en cours pour identifier les menaces actives sur votre système.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Surveillance temps réel</h3>
+                    <p>Mode de surveillance continue pour détecter les changements suspects dès qu’ils apparaissent.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-line-columns"></i>
+                    </div>
+                    <h3>Scan multithread</h3>
+                    <p>Exécution parallèle des analyses pour accélérer les tests sur les machines modernes.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Quarantaine</h3>
+                    <p>Isolation des fichiers suspects pour éviter toute propagation et protéger le système.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Logs détaillés</h3>
+                    <p>Journalisation claire des analyses et des évènements pour un suivi précis des scans.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="71">0</div>
+                    <div class="stat-label">% Shell</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="15">0</div>
+                    <div class="stat-label">% Assembly</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="9">0</div>
+                    <div class="stat-label">% C</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="6">0</div>
+                    <div class="stat-label">⭐ Étoiles</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="section download">
+        <div class="container">
+            <h2 class="section-title">Installation</h2>
+            <div class="download-content">
+                <div class="download-info">
+                    <h3>Compilation et premiers pas</h3>
+                    <p>
+                        ForgeAV se compile facilement sur Windows. Utilisez `build.bat` ou compilez manuellement avec GCC pour obtenir l’exécutable.
+                    </p>
+                    <div class="download-links">
+                        <a href="https://github.com/jujucram/forge-av" class="btn btn-primary" target="_blank">
+                            <i class="fas fa-download"></i>
+                            Voir le dépôt GitHub
+                        </a>
+                        <a href="https://github.com/jujucram/forge-av/issues" class="btn btn-secondary" target="_blank">
+                            <i class="fas fa-bug"></i>
+                            Signaler un problème
+                        </a>
+                    </div>
+                </div>
+                <div class="download-requirements">
+                    <h4>Prérequis</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Windows</li>
+                        <li><i class="fas fa-check"></i> GCC ou MinGW</li>
+                        <li><i class="fas fa-check"></i> Exécution en mode administrateur recommandée</li>
+                        <li><i class="fas fa-check"></i> Machine de test ou environnement virtuel</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Rejoignez la communauté</h2>
+            <div class="contact-content">
+                <div class="contact-text">
+                    <p>
+                        ForgeAV est un projet open source qui évolue grâce à sa communauté. Que vous soyez développeur, testeur ou simple curieux, votre contribution est précieuse.
+                    </p>
+                    <p>
+                        Ouvrez une issue, proposez une amélioration ou partagez un test pour renforcer la détection des menaces.
+                    </p>
+                </div>
+                <div class="contact-links">
+                    <a href="https://github.com/jujucram/forge-av" class="contact-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <span>Dépôt GitHub</span>
+                    </a>
+                    <a href="https://github.com/jujucram/forge-av/issues" class="contact-link" target="_blank">
+                        <i class="fas fa-bug"></i>
+                        <span>Issues</span>
+                    </a>
+                    <a href="https://github.com/jujucram/forge-av/pulls" class="contact-link" target="_blank">
+                        <i class="fas fa-code-branch"></i>
+                        <span>Propositions</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="Logo.png" alt="ForgeAV" class="footer-logo-img">
+                        <span>ForgeAV</span>
+                    </div>
+                    <p>Antivirus léger pour Windows — conçu pour détecter, isoler et documenter les menaces rapidement.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="#home">Accueil</a></li>
+                        <li><a href="#about">À propos</a></li>
+                        <li><a href="#features">Fonctionnalités</a></li>
+                        <li><a href="#download">Installation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Développement</h4>
+                    <ul>
+                        <li><a href="https://github.com/jujucram/forge-av" target="_blank">Code source</a></li>
+                        <li><a href="https://github.com/jujucram/forge-av/issues" target="_blank">Issues</a></li>
+                        <li><a href="https://github.com/jujucram/forge-av/pulls" target="_blank">Pull requests</a></li>
+                        <li><a href="https://github.com/jujucram/forge-av/releases" target="_blank">Releases</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ForgeAV. Projet open source développé par <a href="https://github.com/jujucram" target="_blank">Brandon</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
