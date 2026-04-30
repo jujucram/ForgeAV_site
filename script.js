@@ -45,13 +45,10 @@ async function fetchGitHubStats() {
                 
                 const totalBytes = Object.values(languagesData).reduce((sum, bytes) => sum + bytes, 0);
                 
-                const shellPercentage = Math.round((languagesData.Shell || 0) / totalBytes * 100);
-                const assemblyPercentage = Math.round((languagesData.Assembly || 0) / totalBytes * 100);
+                
                 const cPercentage = Math.round((languagesData.C || 0) / totalBytes * 100);
                 
                 const stats = document.querySelectorAll('.stat-number');
-                stats[0].setAttribute('data-target', shellPercentage);
-                stats[1].setAttribute('data-target', assemblyPercentage);
                 stats[2].setAttribute('data-target', cPercentage);
                 stats[3].setAttribute('data-target', repoData.stargazers_count);
                 
